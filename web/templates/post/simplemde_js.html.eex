@@ -1,0 +1,7 @@
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+<script>
+  (function() {
+    var simplemde = new SimpleMDE({ element: document.getElementById("post_body") });
+  })();
+</script>

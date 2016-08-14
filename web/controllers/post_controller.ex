@@ -10,7 +10,9 @@ defmodule Anvers.PostController do
 
   def new(conn, _params) do
     changeset = Post.changeset(%Post{})
-    render(conn, "new.html", changeset: changeset)
+    conn
+    |> assign(:changeset, changeset)
+    |> render("new.html")
   end
 
   def create(conn, %{"post" => post_params}) do
@@ -34,7 +36,10 @@ defmodule Anvers.PostController do
   def edit(conn, %{"id" => id}) do
     post = Repo.get!(Post, id)
     changeset = Post.changeset(post)
-    render(conn, "edit.html", post: post, changeset: changeset)
+    conn
+    |> assign(:post, post)
+    |> assign(:changeset, changeset)
+    |> render("edit.html")
   end
 
   def update(conn, %{"id" => id, "post" => post_params}) do
