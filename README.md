@@ -19,6 +19,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
   * Phoenix: https://github.com/phoenixframework/phoenix
   * SimpleMDE: https://github.com/NextStepWebs/simplemde-markdown-editor
+  * Earmark: https://github.com/pragdave/earmark
 
 ## Copyright and License
 
