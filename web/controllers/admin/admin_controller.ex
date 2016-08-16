@@ -3,6 +3,7 @@ defmodule Anvers.AdminController do
 
   alias Anvers.Post
 
+  plug Addict.Plugs.Authenticated
   plug :put_layout, "admin.html"
 
   def index(conn, _params) do

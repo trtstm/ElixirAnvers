@@ -1,6 +1,8 @@
 defmodule Anvers.Router do
   use Anvers.Web, :router
 
+  use Addict.RoutesHelper
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -36,7 +38,11 @@ defmodule Anvers.Router do
     put "/posts/:id", AdminController, :update_post
     delete "/posts/:id", AdminController, :delete_post
 
-
+    get "/login", Admin.UserController, :login
+    post "/login", Admin.UserController, :do_login
+    post "/logout", Admin.UserController, :logout
+    get "/register", Admin.UserController, :register
+    post "/register", Admin.UserController, :do_register
   end
 
 
