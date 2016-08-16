@@ -1,34 +1,36 @@
 <h2>Edit post</h2>
 <div class="row">
-          <%= form_for @changeset, post_path(@conn, :update, @post), fn f -> %>
-          <div class="col-md-9">
-            <%= if @changeset.action do %>
-              <div class="alert alert-danger">
-                <p>Oops, something went wrong! Please check the errors below.</p>
-              </div>
-            <% end %>
 
-            <div class="form-group">
-              <%= label f, :title, class: "control-label" %>
-              <%= text_input f, :title, class: "form-control" %>
-              <%= error_tag f, :title %>
-            </div>
+  <div class="col-md-9">
+    <%= form_for @changeset, post_path(@conn, :update, @post), [id: "post-form"],  fn f -> %>
+      <%= if @changeset.action do %>
+        <div class="alert alert-danger">
+        <p>Oops, something went wrong! Please check the errors below.</p>
+        </div>
+      <% end %>
 
-            <div class="form-group">
-              <%= label f, :body, class: "control-label" %>
-              <%= textarea f, :body, class: "form-control" %>
-              <%= error_tag f, :body %>
-            </div>
+      <div class="form-group">
+        <%= label f, :title, class: "control-label" %>
+        <%= text_input f, :title, class: "form-control" %>
+        <%= error_tag f, :title %>
+      </div>
 
+      <div class="form-group">
+        <%= label f, :body, class: "control-label" %>
+        <%= textarea f, :body, class: "form-control" %>
+        <%= error_tag f, :body %>
+      </div>
 
-          </div>
+    <% end %>
+  </div>
 
-          <div class="col-md-3">
-            <div class="box">
-              <span class="box-title">Actions</span>
-              <%= submit "Save", class: "btn btn-primary btn-xs" %>
-              <a href="<%= post_path(@conn, :index) %>" class="btn btn-warning btn-xs">Cancel</a>
-            </div>
-          </div>
-          <% end %>
+  <div class="col-md-3">
+    <div class="box">
+      <span class="box-title">Actions</span>
+      <button data-submit-target="post-form" class="btn btn-primary btn-xs anvers-submit-target">Save</button>
+      <a href="<%= post_path(@conn, :index) %>" class="btn btn-warning btn-xs">Cancel</a>
+      <%= link "Delete", to: post_path(@conn, :delete, @post), method: :delete, data: [confirm: "Really?"], class: "btn btn-danger btn-xs", form: [class: "form-inline"] %>
+    </div>
+  </div>
+
 </div>

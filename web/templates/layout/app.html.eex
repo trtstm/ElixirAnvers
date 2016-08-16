@@ -134,6 +134,9 @@
         </div>
     </footer>
 
+    <script src="<%= static_path(@conn, "/vendor/phoenix/phoenix_html.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/anvers_html.js") %>"></script>
+
     <!-- jQuery -->
     <script src="<%= static_path(@conn, "/vendor/jquery/jquery.min.js") %>"></script>
 

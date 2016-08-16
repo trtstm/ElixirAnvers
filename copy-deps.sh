@@ -15,3 +15,6 @@ cp -r node_modules/simplemde/dist/simplemde.min.css priv/static/vendor/simplemde
 
 mkdir -p priv/static/vendor/jquery
 cp -r node_modules/jquery/dist/jquery.* priv/static/vendor/jquery
+
+mkdir -p priv/static/vendor/phoenix
+cp -r node_modules/phoenix_html/priv/static/phoenix_html.js priv/static/vendor/phoenix
