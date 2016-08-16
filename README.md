@@ -6,6 +6,7 @@ Note that I am writing this to learn Elixir, so it will probably contain poorly 
 
 To start:
 
+  * Copy config/dev.exs.example to config/dev.exs and customize it for your environment
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Install Node.js dependencies with `npm install`
@@ -18,6 +19,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
   * Phoenix: https://github.com/phoenixframework/phoenix
   * SimpleMDE: https://github.com/NextStepWebs/simplemde-markdown-editor
   * Earmark: https://github.com/pragdave/earmark
+  * Theme: https://startbootstrap.com/template-overviews/clean-blog/
 
 ## Copyright and License
 

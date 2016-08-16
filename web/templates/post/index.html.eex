@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+  <%= for post <- @posts do %>
+    <div class="post-preview">
+      <a href="<%= post_path(@conn, :show, post) %>">
+        <h2 class="post-title">
+          <%= post.title %>
+        </h2>
+        <h3 class="post-subtitle">
+          SUBTITLE?
+        </h3>
+      </a>
+      <p class="post-meta">Posted by <a href="#">Unknown</p>
+    </div>
+    <hr>
+  <% end %>
+
+  </div>
+</div>

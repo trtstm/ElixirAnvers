@@ -1,0 +1,3 @@
+<% # Just render the blog posts for now. %>
+
+<%= render Elixir.Anvers.PostView, "index.html", assigns %>
