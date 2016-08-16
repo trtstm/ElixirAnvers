@@ -52,6 +52,8 @@ defmodule Anvers.Web do
       import Anvers.Router.Helpers
       import Anvers.ErrorHelpers
       import Anvers.Gettext
+
+      import Anvers.Helpers
     end
   end
 
@@ -77,5 +79,11 @@ defmodule Anvers.Web do
   """
   defmacro __using__(which) when is_atom(which) do
     apply(__MODULE__, which, [])
+  end
+end
+
+defmodule Anvers.Helpers do
+  def template_exists?(view_module, view_template) do
+    Enum.member?(elem(view_module.__templates__, 2), view_template)
   end
 end
