@@ -1,0 +1,12 @@
+<script src="<%= static_path(@conn, "/vendor/simplemde/js/simplemde.min.js") %>"></script>
+
+
+<script>
+  (function() {
+    var simplemde = new SimpleMDE({
+        autofocus: true,
+        element: document.getElementById("post_body"),
+        placeholder: "Type here..."
+    });
+  })();
+</script>

@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <a href="<%= post_path(@conn, :edit, @post) %>"><i class="icon-cog text-red fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+        <a href="<%= admin_path(@conn, :edit_post, @post) %>"><i class="icon-cog text-red fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
         <%= raw(Earmark.to_html(@post.body)) %>
       </div>
     </div>

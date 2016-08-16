@@ -1,0 +1,5 @@
+<!-- DataTables CSS -->
+<link href="<%= static_path(@conn, "/vendor/datatables/dataTables.bootstrap.css") %>" rel="stylesheet">
+
+<!-- DataTables Responsive CSS -->
+<link href="<%= static_path(@conn, "/vendor/datatables/responsive.bootstrap.css") %>" rel="stylesheet">

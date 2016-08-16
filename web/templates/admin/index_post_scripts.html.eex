@@ -1,0 +1,12 @@
+<!-- DataTables JavaScript -->
+<script src="<%= static_path(@conn, "/vendor/datatables/jquery.dataTables.js") %>"></script>
+<script src="<%= static_path(@conn, "/vendor/datatables/dataTables.bootstrap.js") %>"></script>
+<script src="<%= static_path(@conn, "/vendor/datatables/dataTables.responsive.js") %>"></script>
+
+<script>
+$(document).ready(function() {
+    $('#dataTables-example').DataTable({
+            responsive: true
+    });
+});
+</script>

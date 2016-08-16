@@ -18,3 +18,21 @@ cp -r node_modules/jquery/dist/jquery.* priv/static/vendor/jquery
 
 mkdir -p priv/static/vendor/phoenix
 cp -r node_modules/phoenix_html/priv/static/phoenix_html.js priv/static/vendor/phoenix
+
+mkdir -p priv/static/vendor/metismenu
+cp -r node_modules/metismenu/dist/* priv/static/vendor/metismenu
+
+mkdir -p priv/static/vendor/morrisjs
+cp -r node_modules/morris.js/morris.* priv/static/vendor/morrisjs
+
+mkdir -p priv/static/vendor/raphael
+cp -r node_modules/raphael/raphael.* priv/static/vendor/raphael
+
+mkdir -p priv/static/vendor/datatables
+cp -r node_modules/datatables.net/js/*.js priv/static/vendor/datatables
+cp -r node_modules/datatables.net-bs/js/*.js priv/static/vendor/datatables
+cp -r node_modules/datatables.net-bs/css/*.css priv/static/vendor/datatables
+
+cp -r node_modules/datatables.net-responsive/js/*.js priv/static/vendor/datatables
+cp -r node_modules/datatables.net-responsive-bs/js/*.js priv/static/vendor/datatables
+cp -r node_modules/datatables.net-responsive-bs/css/*.css priv/static/vendor/datatables
