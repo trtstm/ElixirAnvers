@@ -4,6 +4,10 @@ Anvers will be a blogging engine written in Elixir using the Phoenix framework.
 
 Note that I am writing this to learn Elixir, so it will probably contain poorly written code :).
 
+![Admin](admin.png?raw=true "Admin page")
+![Post](post.png?raw=true "Show post")
+
+
 To start:
 
   * Copy config/dev.exs.example to config/dev.exs and customize it for your environment
@@ -20,6 +24,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
   * SimpleMDE: https://github.com/NextStepWebs/simplemde-markdown-editor
   * Earmark: https://github.com/pragdave/earmark
   * Theme: https://startbootstrap.com/template-overviews/clean-blog/
+  * Admin theme: https://startbootstrap.com/template-overviews/sb-admin-2/
 
 ## Copyright and License
 
